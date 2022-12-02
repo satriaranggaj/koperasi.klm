@@ -1,0 +1,17 @@
+#about-banner{
+    height: 25%;
+    width: 100%;
+    margin-top: 75px;
+    background-image: url(img/banner-about.png);
+    font-family: arial;
+    color: white;
+    padding: 8% 0;
+}
+#about-banner h1{
+    font-weight: bold;
+    font-size: 45px;
+}
+#about-banner p{
+    font-weight: bold;
+    font-size: 15px;
+}
