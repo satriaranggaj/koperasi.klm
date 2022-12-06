@@ -36,6 +36,7 @@
     font-weight: bold;
 }
 #struktur{
+    overflow: hidden;
     font-family: arial;
     margin-top: 50px;
     width: 100%;

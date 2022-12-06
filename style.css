@@ -225,6 +225,8 @@
     height: 2px;
 }
 #footer .footer-klm{
+    width: 100%;
+    height: auto;
     background-color: #0d6efd;
     padding: 0 10%;
 }
@@ -232,6 +234,13 @@
     font-family: arial;
     text-decoration: none;
     color: white;
+    position: relative;
+    left: 0;
+    transition: 0.3s;
+}
+.tautan-footer:hover{
+    color: white;
+    left: 15px;
 }
 #footer p{
     font-family: arial;
@@ -243,6 +252,23 @@
     text-decoration: none;
     color: white;
     float: right;
+    transition: 0.3s;
+}
+.sosmed:hover{
+    color: white;
+    margin-top: 20px;
+}
+#chat{
+    position: fixed;
+    right: 0px;
+    bottom: 10px;
+    z-index: 1050;
+}
+.whatsapp a img{
+   width: 40px;
+   height: 40px;
+   box-shadow: 0 0 5px 0 black;
+   border-radius: 13%;
 }
 #copyright{
     width: 100%;
