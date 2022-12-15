@@ -1,0 +1,36 @@
+#produk-banner{
+    margin-top: 60px;
+    width: 100%;
+}
+#produk{
+    margin-top: 75px;
+}
+#produk h2{
+    font-weight: lighter;
+    color: darkblue;
+}
+#produk .col-lg-3 a{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+#produk .col-lg-3 a div{
+    padding: calc(12vh + 1rem) 0 0 0;
+    height: 47vh;
+    border-radius: 2%;
+    box-shadow: 0 0 10px -5px black;
+    margin: auto;
+}
+#prosedur{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 25%;
+    background-image: url(img/wave-bg.png);
+    margin-top: 75px;
+    padding: 10%;
+}
+#prosedur h2{
+    font-weight: lighter;
+    color: darkblue;
+}

@@ -1,3 +1,6 @@
+body{
+    font-family: arial;
+}
 /* .close-btn{
     opacity: 0.5;
 }
@@ -39,24 +42,25 @@
     right: 100px;
 } */
 #hero-banner{
-    padding-top: 55px;
+    padding-top: 60px;
     margin-bottom: 75px;
 }
 #bio{
     margin-bottom: 8%;
 }
 .title-bio{
+    font-size: calc(2vw + 1.5rem);
     color: #0d6efd;
     font-weight: lighter;
     font-family: arial;
 }
 .bio1{
-    font-size: 20px;
+    font-size: calc(.5vw + .7rem);
     font-family: arial;
     color: grey;
 }
 .bio2{
-    font-size: 20px;
+    font-size: calc(.5vw + .7rem);
     font-family: arial;
     color: grey;
 }
@@ -66,10 +70,10 @@
     height: 100%;
 }
 .more-bio{
-    margin-left: 25px;
+    margin: 0 0 0 25px;
     text-decoration: none;
     color: mediumblue;
-    font-size: 20px;
+    font-size: calc(.5vw + .7rem);
     font-weight: bold;
     font-family: arial;
     transition: .3s;
@@ -155,18 +159,19 @@
     color: #0d6efd;
     font-weight: lighter;
     font-family: arial;
+    font-size: calc(1vw + 1rem);
 }
 .card2 p{
     margin: 0 5%;
     color: lightgray;
     font-family: arial;
-    font-size: 105%;
+    font-size: calc(.5vw + .7rem);
 }
 .card1 p, .card3 p{
     margin: 0 5%;
     color: lightgray;
     font-family: arial;
-    font-size: 105%;
+    font-size: calc(.5vw + .7rem);
 }
 .card1:hover, .card3:hover{
     transform: scale(1.1);
@@ -209,7 +214,7 @@
     margin-left: 15px;
     text-decoration: none;
     color: mediumblue;
-    font-size: 15px;
+    font-size: 2.8vh;
     font-weight: bold;
     font-family: arial;
     transition: .3s;
@@ -242,13 +247,20 @@
     color: white;
     left: 15px;
 }
+.tautan-footer h5{
+    font-size: calc(.5vw + .9rem);
+}
+footer h4{
+    font-size: calc(.6vw + 1rem);
+}
 #footer p{
     font-family: arial;
     color: white;
+    font-size: calc(.5vw + .7rem);
 }
 .sosmed{
     margin: 3.3%;
-    font-size: 25px;
+    font-size: calc(1vw + .7rem);
     text-decoration: none;
     color: white;
     float: right;

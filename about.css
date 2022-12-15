@@ -1,25 +1,32 @@
 #about-banner{
     height: 25%;
     width: 100%;
-    margin-top: 75px;
+    margin-top: 65px;
     background-image: url(img/banner-about.png);
+    background-position: center;
     font-family: arial;
     color: white;
     padding: 8% 0;
 }
 #about-banner h1{
     font-weight: bold;
-    font-size: 45px;
+    font-size: calc(3vw + 1rem);
 }
 #about-banner p{
     font-weight: bold;
-    font-size: 15px;
+    font-size: calc(.5vw + .5rem);
 }
 #tentang{
     font-family: arial;
 }
 #tentang h3{
-    font-weight: bold;
+    color: darkblue;
+    font-weight: lighter;
+    font-size: calc(1vw + 1rem);
+}
+#tentang p{
+    color: grey;
+    font-size: calc(.5vw + .7rem);
 }
 #visi-misi{
     background-repeat: no-repeat;
@@ -27,13 +34,16 @@
     margin-top: 45px;
     color: white;
     font-family: arial;
+    font-size: calc(.5vw + .7rem);
     padding: 4%;
     height: 25%;
     width: 100%;
     background-image: url(img/banner-visi.png);
+    background-position: center;
 }
 #visi-misi h3{
     font-weight: bold;
+    font-size: calc(1vw + 1rem);
 }
 #struktur{
     overflow: hidden;
@@ -43,6 +53,8 @@
     height: 30%;
 }
 #struktur h3{
-    font-weight: bold;
+    color: darkblue;
+    font-size: calc(1vw + 1rem);
+    font-weight: lighter;
     margin-bottom: 50px;
 }
