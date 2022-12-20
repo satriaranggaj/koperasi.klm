@@ -5,32 +5,80 @@
 #produk{
     margin-top: 75px;
 }
-#produk h2{
+#produk .container .judul h2{
+    margin-bottom: 50px;
+    text-align: center;
     font-weight: lighter;
     color: darkblue;
 }
-#produk .col-lg-3 a{
-    text-align: center;
-    text-decoration: none;
-    color: black;
+#produk .container .content-produk{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
 }
-#produk .col-lg-3 a div{
-    padding: calc(12vh + 1rem) 0 0 0;
-    height: 47vh;
-    border-radius: 2%;
+.content-produk a{
+    text-decoration: none;
+    color: darkblue;
+    text-align: center;
+}
+.content-produk a div{
+    padding: 55px 0;
+    width: 260px;
+    height: 260px;
     box-shadow: 0 0 10px -5px black;
-    margin: auto;
+    margin: 30px;
+}
+.content-produk a div i{
+    margin-bottom: 1rem;
+    font-size: 5rem;
+}
+.content-produk a div h5{
+    font-weight: lighter;
+    margin: 0;
+}
+.content-produk a div h4{
+    font-weight: bold;
+    margin: 0;
 }
 #prosedur{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 25%;
+    height: 1000px;
     background-image: url(img/wave-bg.png);
     margin-top: 75px;
     padding: 10%;
 }
-#prosedur h2{
+#prosedur .container .judul h2{
+    margin-bottom: 75px;
+    text-align: center;
     font-weight: lighter;
     color: darkblue;
+}
+#prosedur .container .induk-langkah{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#prosedur .container .induk-langkah .number{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.induk-langkah .number div{
+    height: 3.5vw;
+    width: 3.5vw;
+    margin: 0 100px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    background-color: darkblue;
+    border-radius: 50%;
 }
