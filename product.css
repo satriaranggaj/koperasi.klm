@@ -5,7 +5,8 @@
 #produk{
     margin-top: 75px;
 }
-#produk .container .judul h2{
+#produk .container .judul h3{
+    font-size: calc(1vw + 1rem);
     margin-bottom: 50px;
     text-align: center;
     font-weight: lighter;
@@ -45,40 +46,19 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 1000px;
     background-image: url(img/wave-bg.png);
     margin-top: 75px;
     padding: 10%;
 }
-#prosedur .container .judul h2{
-    margin-bottom: 75px;
+#prosedur .container .judul h3{
+    font-size: calc(1vw + 1rem);
+    margin-bottom: 5%;
     text-align: center;
     font-weight: lighter;
     color: darkblue;
 }
-#prosedur .container .induk-langkah{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-#prosedur .container .induk-langkah .number{
-    width: 100%;
-    height: 500px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.induk-langkah .number div{
-    width: 50px;
-    height: 50px;
-    margin: 0 100px;
+#prosedur .container .langkah img{
     text-align: center;
-    line-height: 50px;
-    font-size: 25px;
-    font-weight: bold;
-    color: white;
-    background-color: darkblue;
-    border-radius: 50%;
+    line-height: 1000px;
+    width: 100%;
 }
