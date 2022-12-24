@@ -1,0 +1,54 @@
+#kontak{
+    padding-top: calc(5vw + 3rem);
+}
+#kontak .container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+}
+#kontak .container .judul h3{
+    color: darkblue;
+    font-weight: lighter;
+    font-size: calc(1vw + 1rem);
+}
+#kontak .container .judul{
+    margin: 0  0 2rem 0;
+}
+#kontak .container .info-kontak{
+    max-width: 700px;
+    margin: 10px;
+}
+#kontak .container .info-kontak .data{
+    display: flex;
+    flex-direction: column;
+}
+#kontak .container .info-kontak .data div{
+    display: flex;
+    justify-content: start;
+}
+#kontak .container .info-kontak .medsos{
+    margin: 2rem 0 0 0;
+    width: 100%;
+}
+#kontak .container .info-kontak .medsos .icon-medsos{
+    display: flex;
+    justify-content: start;
+}
+#kontak .container .info-kontak .medsos .icon-medsos div{
+    margin: 10px 10px 2rem 0 ;
+    width: 65px;
+    height: 65px;
+    border: 1px;
+    border-color: grey;
+    border-style: solid;
+    border-radius: 20%;
+}
+#kontak .container .form-kontak{
+    max-width: 700px;
+    margin: 10px;
+}
+#kontak .container .form-kontak .judul{
+    margin-bottom: 2rem;
+}
