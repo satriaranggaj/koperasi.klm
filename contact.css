@@ -36,14 +36,20 @@
     display: flex;
     justify-content: start;
 }
-#kontak .container .info-kontak .medsos .icon-medsos div{
+.link-medsos{
     margin: 10px 10px 2rem 0 ;
     width: 65px;
     height: 65px;
+    text-align: center;
+    line-height: 60px;
     border: 1px;
-    border-color: grey;
+    border-color: rgb(216, 216, 216);
     border-style: solid;
     border-radius: 20%;
+    transition: .3s;
+}
+.link-medsos:hover{
+    transform: scale(1.2);
 }
 #kontak .container .form-kontak{
     max-width: 700px;
