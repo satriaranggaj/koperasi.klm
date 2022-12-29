@@ -123,6 +123,9 @@
     color: darkblue;
     margin: 30px 0;
 }
+#biaya .container .biaya-admin .kotak-biaya p{
+    margin: 0 25px 0 25px;
+}
 #biaya .container .biaya-admin .kotak-biaya .foot-biaya{
     position: sticky;
     top: 100%;
