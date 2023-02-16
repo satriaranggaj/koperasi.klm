@@ -7,6 +7,7 @@
 }
 #berita-artikel .container .utama{
     min-width: 65%;
+    margin-bottom: 200px;
 }
 #berita-artikel .container .utama .content .thumb{
     margin-bottom: 3%;
@@ -76,10 +77,10 @@ select::-ms-expand{
     display: none;
 }
 .content{
-    margin: 75px 0 0 0;
+    margin: 75px 0;
     align-items: center;
     max-width: 800px;
-    height: calc(36vw + 17rem);
+    height: calc(18% + 1rem);
     border-radius: 1%;
     overflow: hidden;
 }
