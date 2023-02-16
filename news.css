@@ -79,7 +79,7 @@ select::-ms-expand{
     margin: 75px 0 0 0;
     align-items: center;
     max-width: 800px;
-    height: calc(30vw + 16rem);
+    height: calc(35vw + 16rem);
     border-radius: 1%;
     overflow: hidden;
 }
@@ -115,7 +115,7 @@ select::-ms-expand{
 }
 .description p{
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
