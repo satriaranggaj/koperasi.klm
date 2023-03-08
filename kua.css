@@ -12,6 +12,7 @@
     min-height: 350px;
     width: 100%;
     display: flex;
+    margin: 0 0 50px 0;
 }
 .content-kua .ganjil{
     flex-wrap: wrap;
