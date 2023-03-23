@@ -1,6 +1,9 @@
 body{
     font-family: arial;
 }
+nav .login-user{
+    padding-left: 10px;
+}
 /* .close-btn{
     opacity: 0.5;
 }
