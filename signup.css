@@ -1,0 +1,26 @@
+#signup-form{
+    margin-top: 120PX;
+}
+.sign-title h3{
+    font-size: calc(.5vw + 1.5rem);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.sign-desc p{
+    font-size: calc(.3vw + .7rem);
+}
+.text-start button{
+    background-color: #0d6efd;
+    color: white;
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 25px;
+    transition: .3s;
+}
+.text-start button:hover{
+    background-color: transparent;
+    color: #0d6efd;
+    border: solid 1px;
+    border-color: #0d6efd;
+}
