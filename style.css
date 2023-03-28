@@ -49,7 +49,24 @@ nav .login-user{
     margin-bottom: 75px;
 }
 #bio{
-    margin-bottom: 8%;
+    margin-bottom: 25px;
+}
+.content-bio{
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap-reverse;
+}
+.title-n-desc{
+    width: calc(25% + 16rem);
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 10px 10px 0 10px;
+}
+.bio-banner{
+    width: calc(25% + 16rem);
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 0 10px 10px 10px;
 }
 .title-bio{
     font-size: calc(2vw + 1.5rem);
@@ -92,20 +109,25 @@ nav .login-user{
     height: 3px;
 }
 #produk{
-    margin-bottom: 10%;
+    margin-bottom: 25px;
+}
+.produk-list{
+    width: 100%;
+    margin: 0 0 50px 0;
 }
 .card1{
-    margin: 6% auto;
+    text-align: center;
+    margin: 50px 25px;
     background-color: white;
     border-radius: 2%;
-    width: 75%;
-    height: 475px;
+    min-width: 35%;
+    height: calc(10vw + 26rem);
     box-shadow: 0 0 10px -5px black;
     overflow: hidden;
     transition: .3s;
 }
 .logo-produk{
-    margin: 15% 0 15% 0;
+    margin: 75px 0;
 }
 .foot-product{
     position: sticky;
@@ -116,17 +138,19 @@ nav .login-user{
     background-image: linear-gradient(90deg,aqua,#0d6efd);
 }
 .card2{
-    margin: auto;
+    text-align: center;
+    margin: 50px 25px;
     background-color: white;
     border-radius: 2%;
-    width: 85%;
-    height: 525px;
+    min-width: 35%;
+    height: calc(10vw + 26rem);
     box-shadow: 0 0 10px -5px black;
     overflow: hidden;
+    transform: scale(1.1);
     transition: .3s;
 }
 .logo-produk2{
-    margin: 15% 0 15% 0;
+    margin: 75px 0;
 }
 .foot-product2{
     position: sticky;
@@ -137,17 +161,18 @@ nav .login-user{
     background-image: linear-gradient(90deg,aqua,#0d6efd);
 }
 .card3{
-    margin: 6% auto;
+    text-align: center;
+    margin: 50px 25px;
     background-color: white;
     border-radius: 2%;
-    width: 75%;
-    height: 475px;
+    min-width: 35%;
+    height: calc(10vw + 26rem);
     box-shadow: 0 0 10px -5px black;
     overflow: hidden;
     transition: .3s;
 }
 .logo-produk3{
-    margin: 15% 0 15% 0;
+    margin: 75px 0;
 }
 .foot-product3{
     position: sticky;
@@ -180,7 +205,7 @@ nav .login-user{
     transform: scale(1.1);
 }
 .card2:hover{
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 .card2 .btn{
     position: sticky;
@@ -191,34 +216,83 @@ nav .login-user{
     top: 75%;
 }
 #kua-klm{
-    position: relative;
-    bottom: 100px;
+    width: 100%;
+}
+.kua-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.logo-kua{
+    margin: 25px auto;
+}
+.button-kua-more{
+    margin-top: 75px;
+    margin-bottom: calc(1vw + 1rem);
+    text-align: center;
 }
 #berita{
-    margin-bottom: -20%;
+    background-image: url(img/wave-bg-news.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
-    background-color: #f3f4f5;
 }
 #berita p{
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 20px;
+    font-size: calc(.5vw + .5rem);
     font-family: arial;
     font-weight: lighter;
     color: grey;
     opacity: 50%;
 }
-.content-berita{
-    position: relative;
-    bottom: 175px;
-}
-.berita{
+.home-news-content{
     width: 100%;
-    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.home-news{
+    margin: 25px auto;
+    width: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 640px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.news-thumbnail{
+    margin: 5px 10px;
+    width: 300px;
+    flex-basis: 300px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.news-thumbnail img{
+    width: 100%;
     border-radius: 4%;
+}
+.news-desc{
+    margin: 5px 10px;
+    width: 300px;
+    flex-basis: 300px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.news-desc h5{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 .more-news{
     margin-left: 15px;
     text-decoration: none;
     color: mediumblue;
-    font-size: 2.8vh;
+    font-size: calc(.5vw + .7rem);
     font-weight: bold;
     font-family: arial;
     transition: .3s;
@@ -233,6 +307,13 @@ nav .login-user{
     width: 15%;
     height: 2px;
 }
+.news-button-more{
+    margin: 75px 0 0 0;
+    text-align: center;
+}
+/* #footer{
+    background-color: rgb(247, 247, 247);
+} */
 #footer .footer-klm{
     width: 100%;
     height: auto;
@@ -263,8 +344,8 @@ footer h4{
     font-size: calc(.5vw + .7rem);
 }
 .sosmed{
-    margin: 3.3%;
-    font-size: calc(1vw + .7rem);
+    margin: 10px 0px 10px 25px;
+    font-size: calc(1vw + 1rem);
     text-decoration: none;
     color: white;
     float: right;

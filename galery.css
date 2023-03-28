@@ -96,15 +96,16 @@
     opacity: 90%;
     transition: .3s;
 }
-.text-box button{
-    background-color: transparent;
+.text-box a{
+    text-decoration: none;
     float: right;
     border: none;
     color: darkblue;
     transition: .3s;
 }
-.text-box button:hover{
+.text-box a:hover{
     color: #0d6efd;
+    text-decoration: underline;
 }
 .text-box button i{
     font-size: 1rem;
@@ -119,4 +120,39 @@
     color: gray;
     font-size: .8rem;
     font-weight: lighter;
+}
+/* halaman galery-content */
+#content-galery{
+    margin-top: calc(5vw + 5rem);
+}
+#content-galery .container .title-content h3{
+    font-size: calc(1vw + 1rem);
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: lighter;
+    color: darkblue;
+}
+#content-galery .container .desc-content p{
+    margin: 0 0 50px 0;
+    color: gray;
+    text-align: center;
+    font-size: calc(.5vw + .5rem);
+    font-weight: lighter;
+}
+.foto-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.foto-content a{
+    width: 300px;
+    margin: 10px;
+    text-decoration: none;
+    flex-basis: 300px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    transition: .3s;
+}
+.foto-content a:hover{
+    scale: 1.1;
 }
