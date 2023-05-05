@@ -172,11 +172,6 @@ nav{
             }
         }
     }
-    #statistik{
-        .container{
-            flex-wrap: wrap;
-        }
-    }
 }
 // ukuran kedua
 @media screen and (max-width: 1200px) {
@@ -359,6 +354,15 @@ nav{
             width: 100%;
         }
     }
+    #statistik{
+        .container{
+            padding: 0 50px;
+            .asset{
+                position: relative;
+                bottom: -150px;
+            }
+        }
+    }
 }
 // Akhir Navbar
 #home-banner{
@@ -508,8 +512,8 @@ nav{
     
     .title{
         text-align: center;
-        font-size: calc(2vw + 1rem);
-        margin: calc(1vw + 3rem) auto;
+        font-size: calc(1vw + 2rem);
+        margin: calc(1vw + 2rem);
         color: #006aad;
     }
     .container{
@@ -517,8 +521,7 @@ nav{
         width: 100%;
         background-color: white;
         display: flex;
-        justify-content: space-between;
-        box-shadow: 0px 0px 20px -10px black;
+        justify-content: space-around;
         .content{
             text-align: center;
             display: flex;
@@ -526,21 +529,21 @@ nav{
             justify-content: center;
             align-items: center;
             margin: 5px;
-            min-height: 175px;
-            max-height: 350px;
-            width: 100%;
+            max-height: 250px;
+            width: 250px;
             background-color: #ffffff;
+            transition: 1s;
 
             h1{
-                font-size: calc(2vw + 1.5rem);
+                font-size: calc(1vw + 2.5rem);
                 color: #008de6;
             }
             h3{
-                font-size: calc(2vw + .5rem);
+                font-size: calc(1vw + 1rem);
                 color: #4a4a4a;
             }
             h5{
-                font-size: calc(1.5vw + .1rem);
+                font-size: calc(.5vw + .7rem);
                 color: #4a4a4a;
                 opacity: 50%;
             }
