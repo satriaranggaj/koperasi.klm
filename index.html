@@ -1,312 +1,103 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Koperasi KLM</title>
-    <!-- Css Bootsrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <!-- Akhir CSS Botstrap -->
-    <!-- Css -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Akhir Css -->
+    <!-- My CSS -->
+    <link rel="stylesheet" href="frontend/styles/main.css">
+    <!-- My CSS -->
     <!-- Fontawesome -->
-    <link rel="stylesheet" tipe="text/css" href="fontawesome/css/all.min.css" />
+    <link rel="stylesheet" tipe="text/css" href="frontend/libraries/fontawesome/css/all.min.css" />
     <!-- Penutup Fontawesome -->
-  </head>
-  <body>
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="frontend/libraries/bootstrap/css/bootstrap.css">
+    <!-- CSS Bootstrap -->
+</head>
+<body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#"><img class="navbar-logo" src="img/LOGO KLM.png" style="width: calc(7vw + 7rem);"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">BERANDA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">TENTANG KAMI</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="product.html">PRODUK</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="kua.html">LEMBAGA</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> INFO </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="galery.html">Galeri</a></li>
-                <li><a class="dropdown-item" href="karir.html">Karir</a></li>
-                <li><a class="dropdown-item" href="news.html">Berita & Artikel</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">KONTAK</a>
-            </li>
-            <li class="nav-item dropdown login-user">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-user"></i>  USER</a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="login.html">Masuk</a></li>
-                <li><a class="dropdown-item" href="signup.html">Daftar</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-      </nav>
-      <!-- Akhir Navbar -->
-      <!-- Hero Banner -->
-      <section id="hero-banner">
+        <nav>
+            <div class="logo">
+                <a href="#">
+                    <img src="frontend/img/LOGO KLM.png" alt="Logo-KLM">
+                </a>
+            </div>
+            <ul>
+                    <li><a class="navbar-link" href="#">BERANDA <div class="line-navlink"></div></a></li>
+                    <li><a class="navbar-link" href="#">TENTANG KAMI<div class="line-navlink"></div></a></li>
+                    <li><a class="navbar-link" href="#">PRODUK<div class="line-navlink"></div></a></li>
+                    <li><a class="navbar-link" href="#">LEMBAGA<div class="line-navlink"></div></a></li>
+                    <li class="navbar-drop">
+                        <a class="navbar-link" href="#">
+                            INFO 
+                            <i class="fa-sharp fa-solid fa-chevron-down"></i>
+                            <div class="line-navlink"></div>
+                        </a>
+                        <ul class="menu">
+                            <li class="list-drop"><div><a href="#">Galeri</a></div></li>
+                            <li class="list-drop"><div><a href="#">Berita & Artikel</a></div></li>
+                            <li class="list-drop"><div><a href="#">Karir</a></div></li>
+                        </ul>
+                    </li>
+                    <li><a class="navbar-link" href="#">KONTAK<div class="line-navlink"></div></a></div></li>
+                    <li><a class="navbar-link" href="#">USER<div class="line-navlink"></div></a></div></li>
+            </ul>
+            <div class="menu-toggle">
+                <input type="checkbox"/>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    <!-- Akhir Navbar -->
+    <!-- Home Banner -->
+    <section id="home-banner">
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="img/banner.png" class="d-block w-100" alt="Banner1">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="frontend/img/home-banner/home-banner1.jpg" class="d-block w-100" alt="Banner1">
+              </div>
+                <div class="carousel-item">
+                <img src="frontend/img/home-banner/home-banner2.jpg" class="d-block w-100" alt="Banner2">
+              </div>
+              <div class="carousel-item">
+                <img src="frontend/img/home-banner/home-banner3.jpg" class="d-block w-100" alt="Banner3">
+              </div>
             </div>
-            <div class="carousel-item">
-              <img src="img/banner2.png" class="d-block w-100" alt="Banner2">
-            </div>
-            <div class="carousel-item">
-              <img src="img/banner3.png" class="d-block w-100" alt="Banner3">
-            </div>
-          </div>
         </div>
-      </section>
-      <!-- Akhir Hero Banner -->
-      <!-- biografi -->
-      <section id="bio">
+    </section>
+    <!-- Home Banner -->
+    <!-- biografi -->
+    <section id="bio">
         <div class="container">
-          <div class="content-bio">
-            <div class="title-n-desc">
-              <h1 class="title-bio">BIOGRAFI SINGKAT</h1>
-              <br>
-              <p class="bio1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi delectus fuga sed? Delectus a earum qui ad nihil ea fugiat molestiae dolores, doloremque aperiam, corporis perspiciatis animi! Rerum, quos ullam!</p>
-              <p class="bio2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae eligendi fugit facilis dolores tenetur consectetur perferendis voluptatum nihil quis corporis odio impedit laborum, saepe expedita facere iusto. Vel, quisquam voluptates?</p>
-              <a href="#" class="more-bio">Selengkapnya</a>
-              <div class="line-bottom-bio"></div>
+            <div class="content-bio">
+                <div class="title-n-desc">
+                    <h1 class="title-bio">BIOGRAFI SINGKAT</h1>
+                    <p class="bio-paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi delectus fuga sed? Delectus a earum qui ad nihil ea fugiat molestiae dolores, doloremque aperiam, corporis perspiciatis animi! Rerum, quos ullam!</p>
+                    <p class="bio-paragraf">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae eligendi fugit facilis dolores tenetur consectetur perferendis voluptatum nihil quis corporis odio impedit laborum, saepe expedita facere iusto. Vel, quisquam voluptates?</p>
+                    <a href="#" class="learn-more">
+                        <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">Selengkapnya</span>
+                    </a>
+                </div>
+                <div class="bio-thumb">
+                    <img src="frontend/img/bio-thumb.png" alt="Thumbnail Biografi" class="img-bio">
+                </div>
             </div>
-            <div class="bio-banner">
-              <img src="img/banner-bio.png" alt="Banner Biografi" class="img-bio">
-            </div>
-          </div>
         </div>
-      </section>
-      <br><br><br>
+    </section>
       <!-- Akhir biografi -->
-      <!-- Produk 2 -->
-      <section id="produk">
-        <div class="container">
-            <div class="produk-content">
-              <div class="title-produk">
-                <h2 style="color: #0d6efd; font-family: arial; font-weight: lighter; text-align: center;">
-                  PRODUK
-                </h2>
-              </div>
-              <br><br>
-              <div class="produk-list">
-                <div class="row text-center">
-                  <div class="col-lg-4">
-                    <div class="card1">
-                      <img src="img/logo-produk.png" alt="logo produk 1" class="logo-produk">
-                      <h3>Produk 1</h3>
-                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum unde vel eos amet aperiam nisi, exercitationem et cum optio deserunt?</p>
-                      <button type="button" class="btn btn-primary mt-3">Primary</button>
-                      <div class="foot-product"></div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4">
-                    <div class="card2">
-                      <img src="img/logo-produk.png" alt="logo produk 2" class="logo-produk2">
-                      <h3>Produk 2</h3>
-                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum unde vel eos amet aperiam nisi, exercitationem et cum optio deserunt?</p>
-                      <button type="button" class="btn btn-primary mt-3">Primary</button>
-                      <div class="foot-product2"></div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4">
-                    <div class="card3">
-                      <img src="img/logo-produk.png" alt="logo produk 3" class="logo-produk3">
-                      <h3>Produk 3</h3>
-                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum unde vel eos amet aperiam nisi, exercitationem et cum optio deserunt?</p>
-                      <button type="button" class="btn btn-primary mt-3">Primary</button>
-                      <div class="foot-product3"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="button-tampil" style="text-align: center;">
-                <button type="button" class="btn btn-outline-primary">TAMPILKAN SEMUA</button>
-              </div>
-            </div>
-        </div>
-      </section>
-      <br><br><br>
-      <!-- Akhir Produk 2 -->
-      <!-- KUA -->
-      <section id="kua-klm">
-        <div class="container">
-          <div class="kua-logo">
-            <div class="kua-title">
-              <h2 style="color: #0d6efd; font-family: arial; font-weight: lighter; text-align: center;">LEMBAGA KOPERASI KRANGGAN LEMBUR MANDIRI</h2>
-            </div>
-            <br><br>
-            <div class="kua-list">
-              <div class="logo-kua">
-                <img src="img/logo-kua.png" alt="kua1" class="kua1">
-              </div>
-              <div class="logo-kua">
-                <img src="img/logo-kua.png" alt="kua2" class="kua2">
-              </div>
-              <div class="logo-kua">
-                <img src="img/logo-kua.png" alt="kua3" class="kua3">
-              </div>
-              <div class="logo-kua">
-                <img src="img/logo-kua.png" alt="kua4" class="kua4">
-              </div>
-            </div>
-            <div class="button-kua-more">
-              <button type="button" class="btn btn-outline-primary">TAMPILKAN SEMUA</button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <br><br>
-      <!-- Akhir KUA -->
-      <!-- Berita -->
-      <section id="berita">
-        <div class="container">
-          <div class="content-berita">
-              <div class="home-news-title">
-                <h2 style="color: #0d6efd; font-family: arial; font-weight: lighter; text-align: center;">BERITA</h2>
-              </div>
-              <br><br>
-              <div class="home-news-content">
-                <div class="home-news">
-                    <div class="news-thumbnail">
-                      <img src="img/thumb-berita.png" alt="Berita 1">
-                    </div>
-                    <div class="news-desc">
-                      <h5 style="color: #0d6efd; font-family: arial; font-weight: lighter; font-size: calc(.5vw + .7rem);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, dicta accusantium! Voluptas, quibusdam quia temporibus modi corporis aperiam, architecto, quidem perspiciatis ipsa magnam voluptatum cupiditate illum in laudantium inventore nihil.</h5>
-                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas possimus optio similique aut autem voluptatum non eveniet delectus?</p>
-                      <a href="#" class="more-news">Selengkapnya</a>
-                      <div class="line-bottom-news"></div>
-                    </div>
-                </div>
-                <div class="home-news">
-                  <div class="news-thumbnail">
-                    <img src="img/thumb-berita.png" alt="Berita 1">
-                  </div>
-                  <div class="news-desc">
-                    <h5 style="color: #0d6efd; font-family: arial; font-weight: lighter; font-size: calc(.5vw + .7rem);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, dicta accusantium! Voluptas, quibusdam quia temporibus modi corporis aperiam, architecto, quidem perspiciatis ipsa magnam voluptatum cupiditate illum in laudantium inventore nihil.</h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas possimus optio similique aut autem voluptatum non eveniet delectus?</p>
-                    <a href="#" class="more-news">Selengkapnya</a>
-                    <div class="line-bottom-news"></div>
-                  </div>
-                </div>
-                <div class="home-news">
-                  <div class="news-thumbnail">
-                    <img src="img/thumb-berita.png" alt="Berita 1">
-                  </div>
-                  <div class="news-desc">
-                    <h5 style="color: #0d6efd; font-family: arial; font-weight: lighter; font-size: calc(.5vw + .7rem);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, dicta accusantium! Voluptas, quibusdam quia temporibus modi corporis aperiam, architecto, quidem perspiciatis ipsa magnam voluptatum cupiditate illum in laudantium inventore nihil.</h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas possimus optio similique aut autem voluptatum non eveniet delectus?</p>
-                    <a href="#" class="more-news">Selengkapnya</a>
-                    <div class="line-bottom-news"></div>
-                  </div>
-                </div>
-                <div class="home-news">
-                  <div class="news-thumbnail">
-                    <img src="img/thumb-berita.png" alt="Berita 1">
-                  </div>
-                  <div class="news-desc">
-                    <h5 style="color: #0d6efd; font-family: arial; font-weight: lighter; font-size: calc(.5vw + .7rem);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, dicta accusantium! Voluptas, quibusdam quia temporibus modi corporis aperiam, architecto, quidem perspiciatis ipsa magnam voluptatum cupiditate illum in laudantium inventore nihil.</h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas possimus optio similique aut autem voluptatum non eveniet delectus?</p>
-                    <a href="#" class="more-news">Selengkapnya</a>
-                    <div class="line-bottom-news"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="news-button-more">
-                <button type="button" class="btn btn-primary">TAMPILKAN SEMUA</button>
-              </div>
-          </div>
-        </div>
-      </section>
-      <!-- Akhir Berita -->
-      <!-- Footer -->
-      <footer id="footer" style="background-color: rgb(247, 247, 247);">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0d6efd" fill-opacity="1" d="M0,192L34.3,208C68.6,224,137,256,206,272C274.3,288,343,288,411,277.3C480,267,549,245,617,245.3C685.7,245,754,267,823,282.7C891.4,299,960,309,1029,282.7C1097.1,256,1166,192,1234,176C1302.9,160,1371,192,1406,208L1440,224L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
-        <div class="footer-klm">
-          <div class="container">
-            <br><br><br>
-            <div class="row">
-              <div class="col-md-4 mb-3">
-                <h4 style="color: white; font-family: arial; font-weight: bold;">TAUTAN LANGSUNG</h4>
-                <br>
-                <a href="" class="tautan-footer"><h5>Tautan 1</h5></a>
-                <a href="" class="tautan-footer"><h5>Tautan 2</h5></a>
-                <a href="" class="tautan-footer"><h5>Tautan 3</h5></a>
-                <a href="" class="tautan-footer"><h5>Tautan 4</h5></a>
-                <a href="" class="tautan-footer"><h5>Tautan 5</h5></a>
-                <a href="" class="tautan-footer"><h5>Tautan 6</h5></a>
-                <a href="" class="tautan-footer"><h5>Tautan 7</h5></a>
-              </div>
-              <div class="col-md-4 mb-3">
-                <h4 style="color: white; font-family: arial; font-weight: bold;">KOPERASI KLM</h4>
-                <br>
-                <p>KRANGGAN LEMBUR
-                  <br>
-                  Jl. Lembur RT 001/004, Kel. Jatirangga
-                  <br>
-                  kec. Jatisampurna, Kota Bekasi, Jawa Barat, Indonesia.
-                </p>
-                <p>Telp: 0881-5695-295</p>
-              </div>
-              <div class="col-md-4 text-end mb-3">
-                <h4 style="color: white; font-family: arial; font-weight: bold;">MEDIA SOSIAL</h4>
-                <a href="" class="sosmed"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="" class="sosmed"><i class="fa-brands fa-twitter"></i></a>
-                <a href="" class="sosmed"><i class="fa-brands fa-instagram"></i></a>
-                <a href="" class="sosmed"><i class="fa-brands fa-facebook-f"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-      <!-- Akhir Footer -->
-      <!-- Copyright -->
-        <section id="copyright">
-          <p>Copyright © 2022 Koperasi KLM <a href="https://www.instagram.com/satria_rangga_j/">Satria Rangga</a></p>
-        </section>
-      <!-- Akhir Copyright -->
-      <!-- Chat -->
-      <section id="chat">
-        <div class="container">
-          <div class="whatsapp">
-            <a href="#"><img src="img/logo-wa.png" alt="icon-wa"></a>
-          </div>
-        </div>
-      </section>
-      <!-- Akhir Chat -->
-       <!-- Alert -->
-    <!-- <section id="alert">
-      <div class="background-alert"></div>
-      <div class="content-alert">
-        <a href="#" onclick='closepopup()' class="close-btn">
-          <img src="img/close-logo.png" alt="" class="img-close">
-        </a>
-          <img src="img/logo-kua.png" alt="Alert" class="img-alert" style="height: 100%; width: 100%;">
-      </div>
-    </section> -->
-    <!-- Akhir Alert -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    <script>
-      function closepopup() {
-        document.getElementById('alert'). style.display="none";
-      }
-    </script>
-  </body>
+    <!-- My Script -->
+    <script src="frontend/scripts/main.js"></script>
+    <!-- My Script -->
+    <!-- JS Bootstrap -->
+    <script src="frontend/libraries/bootstrap/js/bootstrap.js"></script>
+    <!-- JS Bootstrap -->
+    <!-- JS Jquery -->
+    <script src="frontend/libraries/jquery/jquery-3.6.4.min.js"></script>
+    <!-- JS Jquery -->
+</body>
 </html>
