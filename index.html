@@ -53,23 +53,38 @@
     <!-- Akhir Navbar -->
     <!-- Home Banner -->
     <section id="home-banner">
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="frontend/img/home-banner/home-banner1.jpg" class="d-block w-100" alt="Banner1">
-              </div>
-                <div class="carousel-item">
-                <img src="frontend/img/home-banner/home-banner2.jpg" class="d-block w-100" alt="Banner2">
-              </div>
-              <div class="carousel-item">
-                <img src="frontend/img/home-banner/home-banner3.jpg" class="d-block w-100" alt="Banner3">
-              </div>
+        <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="frontend/img/home-banner/home-banner1.jpg" class="d-block w-100" alt="Banner 1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="frontend/img/home-banner/home-banner2.jpg" class="d-block w-100" alt="Banner 2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="frontend/img/home-banner/home-banner3.jpg" class="d-block w-100" alt="Banner 3">
+                  </div>
+                </div>
+                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button> -->
             </div>
         </div>
     </section>
     <!-- Home Banner -->
     <!-- biografi -->
-    <section id="bio">
+    <section id="bio-home-page">
         <div class="container">
             <div class="content-bio">
                 <div class="title-n-desc">
@@ -90,6 +105,34 @@
         </div>
     </section>
       <!-- Akhir biografi -->
+      <!-- Data Statistik -->
+        <section id="statistik">
+            <h1 class="title">STATISTIK</h1>
+            <div class="container">
+                <div class="content">
+                    <h1>
+                        <i class="fa-solid fa-users"></i>
+                    </h1>
+                    <h3>1.000</h3>
+                    <h5>Anggota</h5>
+                </div>
+                <div class="content">
+                    <h1>
+                        <i class="fa-solid fa-vault"></i>
+                    </h1>
+                    <h3>50 Milyar</h3>
+                    <h5>Asset</h5>
+                </div>
+                <div class="content">
+                    <h1>
+                        <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                    </h1>
+                    <h3>800 Juta</h3>
+                    <h5>Simpanan</h5>
+                </div>
+            </div>
+        </section>
+      <!-- Akhir Data Statistik -->
     <!-- My Script -->
     <script src="frontend/scripts/main.js"></script>
     <!-- My Script -->
