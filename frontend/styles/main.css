@@ -642,7 +642,7 @@ nav ul li.active a .line-navlink {
 }
 
 #bio-home-page .container .content-bio .title-bio {
-  font-size: calc(2vw + 1rem);
+  font-size: calc(1vw + 2rem);
   margin: 15px auto;
   color: #006aad;
 }
