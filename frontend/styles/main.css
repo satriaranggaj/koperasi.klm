@@ -737,7 +737,7 @@ nav ul li.active a .line-navlink {
 
 #statistik {
   margin: calc(1vw + 3rem) auto;
-  min-height: 400px;
+  min-height: 100px;
   width: 100%;
   background-color: white;
 }
@@ -800,7 +800,7 @@ nav ul li.active a .line-navlink {
 }
 
 #produk {
-  margin: 0 auto;
+  margin: calc(1vw + 3rem) auto;
   min-height: 600px;
   width: 100%;
 }
@@ -1002,8 +1002,8 @@ nav ul li.active a .line-navlink {
 }
 
 #lembaga {
-  margin: calc(1vw + 3rem) auto;
-  min-height: 600px;
+  margin: 0 auto;
+  min-height: 400px;
   width: 100%;
 }
 
@@ -1028,7 +1028,7 @@ nav ul li.active a .line-navlink {
 
 #lembaga .container .card {
   margin: 5px;
-  min-height: 350px;
+  height: 230px;
   width: 100%;
   border: none;
   display: -webkit-box;
@@ -1038,114 +1038,59 @@ nav ul li.active a .line-navlink {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 #lembaga .container .card img {
+  margin: auto;
   max-width: 200px;
-  margin-bottom: 100px;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-#lembaga .container .card a.more-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-decoration: none;
-  text-align: center;
-  color: #006aad;
-  font-size: 1.5rem;
+#lembaga .container a.more-btn {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
   visibility: hidden;
   opacity: 0;
+  text-decoration: none;
+  text-align: center;
+  color: #4a4a4a;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-#lembaga .container .card a.more-btn .bg-btn {
-  position: absolute;
-  left: -115px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #006aad;
-  color: white;
-  height: 50px;
-  width: 50px;
-  border-radius: 50px;
-  -webkit-transition: 1s;
-  transition: 1s;
+#lembaga .container a.more-btn:hover {
+  color: #0d6efd;
 }
 
-#lembaga .container .card a.more-btn .bg-btn i.fa-arrow-right {
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-#lembaga .container .card a.more-btn .bg-btn i.fa-angle-right {
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-#lembaga .container .card a.more-btn .text-btn {
-  height: 50px;
-  line-height: 50px;
-  position: absolute;
-  left: -55px;
-  font-weight: 500;
-  color: #006aad;
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-#lembaga .container .card a.more-btn:hover .bg-btn {
-  width: 240px;
-}
-
-#lembaga .container .card a.more-btn:hover .bg-btn i.fa-arrow-right {
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-  opacity: 1;
-  visibility: visible;
-}
-
-#lembaga .container .card a.more-btn:hover .bg-btn i.fa-angle-right {
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-  opacity: 0;
-  visibility: hidden;
-}
-
-#lembaga .container .card a.more-btn:hover .text-btn {
-  color: white;
-}
-
-#lembaga .container .card:hover a.more-btn {
+#lembaga .card:hover a.more-btn {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   visibility: visible;
   opacity: 1;
 }
 
-#lembaga .container .card:hover img {
+#lembaga .card:hover img {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+#berita {
+  margin: calc(1vw + 3rem) auto;
+  min-height: 600px;
+  width: 100%;
+}
+
+#berita .title {
+  text-align: center;
+  font-size: calc(1vw + 2rem);
+  margin: calc(1vw + 2rem);
+  color: #006aad;
 }
 /*# sourceMappingURL=main.css.map */
