@@ -227,6 +227,12 @@ nav{
     nav ul{
         width: 75%;
     }
+    #footer{
+        .container{
+            flex-wrap: nowrap;
+            flex-direction: column;
+        }
+    }
 }
 // ukuran mobile
 @media screen and (max-width: 750px) {
@@ -934,6 +940,7 @@ nav{
             }
         }
         .footer-sosmed{
+            width: fit-content;
             margin: 20px 0;
             .list-sosmed{
                 display: flex;
