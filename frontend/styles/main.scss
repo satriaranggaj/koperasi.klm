@@ -2,105 +2,10 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow-x: hidden;
 }
-#head-navbar{
-    height: 30px;
-    width: 100%;
-    background-color: #eeeeee;
-    font-size: calc(.2vw + .5rem);
-
-    .container{
-        display: flex;
-        justify-content: space-between;
-        
-        .phone-email{
-            display: flex;
-
-            .office-email{
-                display: flex;
-                margin: 0 25px 0 0;
-
-                i{
-                    color: #0d6efd;
-                    margin-top: calc(.1vw + .6rem);
-                    margin-right: 5px;
-                }
-                p{
-                    margin-top: calc(.1vw + .4rem);
-                }
-            }
-            .office-phone{
-                display: flex;
-
-                i{
-                    color: #0d6efd;
-                    margin-top: calc(.1vw + .6rem);
-                    margin-right: 5px;
-                }
-                p{
-                    margin-top: calc(.1vw + .4rem);
-                }
-            }
-        }
-        .social-media{
-            display: flex;
-            margin: 2px 0 0 0;
-
-            p{
-                font-weight: 500;
-                color: #4a4a4a;
-            }
-            span{
-                margin: 13px 5px 0 5px;
-                height: 2px;
-                width: 5px;
-                background-color: #4a4a4a;
-                transition: .3s;
-            }
-            .sosmed-list{
-                display: flex;
-                opacity: 0;
-                transform: translateX(-100%);
-                visibility: hidden;
-                transition: .3s;
-                
-                a{
-                    margin: 0 3px;
-                    color: #4a4a4a;
-                }
-                a:hover{
-                    transform: scale(1.1);
-                }
-                a.fb:hover{
-                    color: #0d6efd;
-                }
-                a.ig:hover{
-                    color: salmon;
-                }
-                a.tw:hover{
-                    color: #0d6efd;
-                }
-                a.li:hover{
-                    color: #0d6efd;
-                }
-            }
-        }
-        .social-media:hover{
-            span{
-                width: 15px;
-            }
-            .sosmed-list{
-                opacity: 1;
-                transform: translateX(0);
-                visibility: visible;
-            }
-        }
-    }
-}
 // navbar
 nav{
     z-index: 50;
-    position: sticky;
-    overflow: hidden;
+    position: fixed;
     top: 0px;
     width: 100%;
     align-items: center;
@@ -325,17 +230,6 @@ nav{
         .container{
             flex-wrap: nowrap;
             flex-direction: column;
-        }
-    }
-    #head-navbar{
-        .container{
-            justify-content: center;
-            .phone-email{
-                justify-content: space-between;
-            }
-            .social-media{
-                display: none;
-            }
         }
     }
 }
