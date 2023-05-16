@@ -3,10 +3,137 @@ body {
   overflow-x: hidden;
 }
 
+#head-navbar {
+  height: 30px;
+  width: 100%;
+  background-color: #eeeeee;
+  font-size: calc(.2vw + .5rem);
+}
+
+#head-navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#head-navbar .container .phone-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#head-navbar .container .phone-email .office-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 25px 0 0;
+}
+
+#head-navbar .container .phone-email .office-email i {
+  color: #0d6efd;
+  margin-top: calc(.1vw + .6rem);
+  margin-right: 5px;
+}
+
+#head-navbar .container .phone-email .office-email p {
+  margin-top: calc(.1vw + .4rem);
+}
+
+#head-navbar .container .phone-email .office-phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#head-navbar .container .phone-email .office-phone i {
+  color: #0d6efd;
+  margin-top: calc(.1vw + .6rem);
+  margin-right: 5px;
+}
+
+#head-navbar .container .phone-email .office-phone p {
+  margin-top: calc(.1vw + .4rem);
+}
+
+#head-navbar .container .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2px 0 0 0;
+}
+
+#head-navbar .container .social-media p {
+  font-weight: 500;
+  color: #4a4a4a;
+}
+
+#head-navbar .container .social-media span {
+  margin: 13px 5px 0 5px;
+  height: 2px;
+  width: 5px;
+  background-color: #4a4a4a;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#head-navbar .container .social-media .sosmed-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  visibility: hidden;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#head-navbar .container .social-media .sosmed-list a {
+  margin: 0 3px;
+  color: #4a4a4a;
+}
+
+#head-navbar .container .social-media .sosmed-list a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#head-navbar .container .social-media .sosmed-list a.fb:hover {
+  color: #0d6efd;
+}
+
+#head-navbar .container .social-media .sosmed-list a.ig:hover {
+  color: salmon;
+}
+
+#head-navbar .container .social-media .sosmed-list a.tw:hover {
+  color: #0d6efd;
+}
+
+#head-navbar .container .social-media .sosmed-list a.li:hover {
+  color: #0d6efd;
+}
+
+#head-navbar .container .social-media:hover span {
+  width: 15px;
+}
+
+#head-navbar .container .social-media:hover .sosmed-list {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  visibility: visible;
+}
+
 nav {
   z-index: 50;
-  position: fixed;
-  top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  overflow: hidden;
+  top: 0px;
   width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -295,6 +422,19 @@ nav ul li.active a .line-navlink {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  #head-navbar .container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #head-navbar .container .phone-email {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #head-navbar .container .social-media {
+    display: none;
   }
 }
 
