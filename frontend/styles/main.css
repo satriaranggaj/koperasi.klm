@@ -18,8 +18,10 @@ nav {
   background-color: white;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-shadow: 0px 3px 20px -10px black;
-          box-shadow: 0px 3px 20px -10px black;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 nav .logo img {
@@ -235,16 +237,8 @@ nav ul li.active a .line-navlink {
     width: 50%;
   }
   #bio-home-page .container .content-bio {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap-reverse;
-            flex-flow: row wrap-reverse;
-  }
-  #bio-home-page .container .content-bio .title-n-desc {
-    width: 100%;
-  }
-  #bio-home-page .container .content-bio .bio-thumb {
-    width: 100%;
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
   }
 }
 
@@ -1407,5 +1401,68 @@ nav ul li.active a .line-navlink {
 
 #footer .lisence-footer a:hover img {
   opacity: 1;
+}
+
+#about-banner {
+  height: calc(15vw + 5rem);
+  width: 100%;
+  background-image: url(../img/about-page/banner/banner-about.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 4.4rem 0 calc(1vw + 3rem) 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#about-banner .container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+#about-banner .container .title-banner h1 {
+  font-size: calc(2vw + 1rem);
+  font-weight: bold;
+  color: #ffffff;
+}
+
+#about-banner .container .title-banner p {
+  font-weight: 500;
+  color: #ffffff;
+  font-size: calc(.54vw + .26rem);
+}
+
+#biografi {
+  width: 100%;
+}
+
+#biografi .container .title-about {
+  margin: 0 0 1vw 0;
+}
+
+#biografi .container .title-about h1 {
+  font-size: calc(2vw + 1rem);
+  color: #006aad;
+}
+
+#biografi .container .desc-about p {
+  color: grey;
+  font-size: calc(.3vw + .7rem);
+}
+
+#biografi .container .desc-about span {
+  margin-right: 30px;
 }
 /*# sourceMappingURL=main.css.map */
