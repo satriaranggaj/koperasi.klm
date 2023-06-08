@@ -1465,4 +1465,38 @@ nav ul li.active a .line-navlink {
 #biografi .container .desc-about span {
   margin-right: 30px;
 }
+
+#visi-misi {
+  min-height: 650px;
+  width: 100%;
+  margin-top: calc(2vw + 3rem);
+}
+
+#visi-misi .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-image: url(../img/about-page/banner/banner-visi-misi.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#visi-misi .container .misi {
+  max-width: 650px;
+}
+
+#visi-misi .container .misi .title h3 {
+  color: #006aad;
+  font-size: calc(1vw + 1rem);
+}
+
+#visi-misi .container .misi p {
+  color: grey;
+  font-size: calc(.3vw + .7rem);
+}
 /*# sourceMappingURL=main.css.map */
