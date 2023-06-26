@@ -616,6 +616,12 @@ nav ul li.active a .line-navlink {
     position: relative;
     bottom: -150px;
   }
+  .slide-container .slide-content {
+    margin: 0 10px;
+  }
+  .slide-container .swiper-navBtn {
+    display: none;
+  }
 }
 
 #home-banner {
@@ -655,7 +661,7 @@ nav ul li.active a .line-navlink {
 }
 
 #bio-home-page .container .content-bio .title-bio {
-  font-size: calc(1vw + 2rem);
+  font-size: calc(1.5vw + 1.5rem);
   margin: 15px auto;
   color: #006aad;
 }
@@ -752,7 +758,7 @@ nav ul li.active a .line-navlink {
 
 #statistik .title {
   text-align: center;
-  font-size: calc(1vw + 2rem);
+  font-size: calc(1.5vw + 1.5rem);
   margin: calc(1vw + 2rem);
   color: #006aad;
 }
@@ -815,7 +821,7 @@ nav ul li.active a .line-navlink {
 
 #produk .title {
   text-align: center;
-  font-size: calc(1vw + 2rem);
+  font-size: calc(1.5vw + 1.5rem);
   margin: calc(1vw + 2rem);
   color: #006aad;
 }
@@ -1017,7 +1023,7 @@ nav ul li.active a .line-navlink {
 
 #lembaga .title {
   text-align: center;
-  font-size: calc(1vw + 2rem);
+  font-size: calc(1.5vw + 1.5rem);
   margin: calc(1vw + 2rem);
   color: #006aad;
 }
@@ -1097,7 +1103,7 @@ nav ul li.active a .line-navlink {
 
 #berita .title {
   text-align: center;
-  font-size: calc(1vw + 2rem);
+  font-size: calc(1.5vw + 1.5rem);
   margin: calc(1vw + 2rem);
   color: #006aad;
 }
@@ -1453,7 +1459,7 @@ nav ul li.active a .line-navlink {
 }
 
 #biografi .container .title-about h1 {
-  font-size: calc(2vw + 1rem);
+  font-size: calc(1.5vw + 1.5rem);
   color: #006aad;
 }
 
@@ -1498,5 +1504,558 @@ nav ul li.active a .line-navlink {
 #visi-misi .container .misi p {
   color: grey;
   font-size: calc(.3vw + .7rem);
+}
+
+#struktur {
+  min-height: 750px;
+  margin: 0 50px 100px 50px;
+}
+
+#struktur .container-fluid {
+  width: 100%;
+  padding: 0;
+}
+
+#struktur .container-fluid .title {
+  margin: 0 0 5vw 0;
+  text-align: center;
+}
+
+#struktur .container-fluid .title h1 {
+  font-size: calc(2vw + 1rem);
+  color: #006aad;
+}
+
+#struktur .container-fluid .content .pohon-struktur img {
+  width: 100%;
+}
+
+#struktur .container-fluid .content .pengurus {
+  margin: 50px 0 0 0;
+}
+
+#struktur .container-fluid .content .pengurus .title h2 {
+  color: #006aad;
+  font-size: calc(1vw + 1rem);
+}
+
+#struktur .container-fluid .content .pengurus .title h6 {
+  color: gray;
+  font-size: calc(.5vw + .5rem);
+}
+
+#struktur .container-fluid .content .pengurus .slide-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1120px;
+  width: 100%;
+  padding: 0 0 40px 0;
+}
+
+#struktur .container-fluid .content .pengurus .slide-container .slide-content-pengurus {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+#struktur .container-fluid .content .pengurus .slide-container .slide-content-pengurus .card-wrapper .card {
+  width: 100%;
+  border-radius: 25px;
+  background-color: white;
+}
+
+#struktur .container-fluid .content .pengurus .slide-container .slide-content-pengurus .card-wrapper .card .image-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 14px;
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+
+#struktur .container-fluid .content .pengurus .slide-container .slide-content-pengurus .card-wrapper .card .image-content .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #008de6;
+  border-radius: 25px 25px 0 25px;
+}
+
+#struktur .container-fluid .content .pengurus .slide-container .slide-content-pengurus .card-wrapper .card .image-content .overlay::before,
+#struktur .container-fluid .content .pengurus .slide-container .slide-content-pengurus .card-wrapper .card .image-content .overlay::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #008de6;
+}
+
+#struktur .container-fluid .content .pengurus .slide-container .slide-content-pengurus .card-wrapper .card .image-content .overlay::after {
+  border-radius: 0 25px 0 0;
+  background-color: white;
+}
+
+#struktur .container-fluid .content .pengurus .slide-container .slide-content-pengurus .card-wrapper .card .image-content .card-image {
+  position: relative;
+  height: calc(10vw + 5rem);
+  width: calc(10vw + 5rem);
+  border-radius: 50%;
+  background: white;
+  padding: 3px;
+}
+
+#struktur .container-fluid .content .pengurus .slide-container .slide-content-pengurus .card-wrapper .card .image-content .card-image .card-img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #008de6;
+}
+
+#struktur .container-fluid .content .pengurus .slide-container .slide-content-pengurus .card-wrapper .card .card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 14px;
+}
+
+#struktur .container-fluid .content .pengurus .slide-container .slide-content-pengurus .card-wrapper .card .card-content .name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+#struktur .container-fluid .content .pengurus .slide-container .slide-content-pengurus .card-wrapper .card .card-content .description {
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+}
+
+#struktur .container-fluid .content .pengurus .slide-container .slide-content-pengurus .card-wrapper .card .card-content .button {
+  border: none;
+  font-size: 16px;
+  color: white;
+  padding: 8px 16px;
+  background-color: #008de6;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#struktur .container-fluid .content .pengurus .slide-container .slide-content-pengurus .card-wrapper .card .card-content button:hover {
+  background-color: #707070;
+}
+
+#struktur .container-fluid .content .pengurus .slide-container .swiper-navBtn {
+  color: gray;
+  opacity: .5;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+#struktur .container-fluid .content .pengurus .slide-container .swiper-navBtn:hover {
+  color: black;
+}
+
+#struktur .container-fluid .content .pengurus .slide-container .swiper-navBtn::before,
+#struktur .container-fluid .content .pengurus .slide-container .swiper-navBtn::after {
+  font-size: 35px;
+}
+
+#struktur .container-fluid .content .pengurus .slide-container .swiper-button-next {
+  right: 0;
+}
+
+#struktur .container-fluid .content .pengurus .slide-container .swiper-button-prev {
+  left: 0;
+}
+
+#struktur .container-fluid .content .pengurus .slide-container .swiper-pagination-bullet {
+  background-color: #6E93f7;
+  opacity: .5;
+}
+
+#struktur .container-fluid .content .pengurus .slide-container .swiper-pagination-bullet-active {
+  background-color: #4070F4;
+}
+
+#struktur .container-fluid .content .pengawas {
+  margin: 50px 0 0 0;
+}
+
+#struktur .container-fluid .content .pengawas .title h2 {
+  color: #006aad;
+  font-size: calc(1vw + 1rem);
+}
+
+#struktur .container-fluid .content .pengawas .title h6 {
+  color: gray;
+  font-size: calc(.5vw + .5rem);
+}
+
+#struktur .container-fluid .content .pengawas .slide-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1120px;
+  width: 100%;
+  padding: 0 0 40px 0;
+}
+
+#struktur .container-fluid .content .pengawas .slide-container .slide-content-pengawas {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+#struktur .container-fluid .content .pengawas .slide-container .slide-content-pengawas .card-wrapper .card {
+  width: 100%;
+  border-radius: 25px;
+  background-color: white;
+}
+
+#struktur .container-fluid .content .pengawas .slide-container .slide-content-pengawas .card-wrapper .card .image-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 14px;
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+
+#struktur .container-fluid .content .pengawas .slide-container .slide-content-pengawas .card-wrapper .card .image-content .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #008de6;
+  border-radius: 25px 25px 0 25px;
+}
+
+#struktur .container-fluid .content .pengawas .slide-container .slide-content-pengawas .card-wrapper .card .image-content .overlay::before,
+#struktur .container-fluid .content .pengawas .slide-container .slide-content-pengawas .card-wrapper .card .image-content .overlay::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #008de6;
+}
+
+#struktur .container-fluid .content .pengawas .slide-container .slide-content-pengawas .card-wrapper .card .image-content .overlay::after {
+  border-radius: 0 25px 0 0;
+  background-color: white;
+}
+
+#struktur .container-fluid .content .pengawas .slide-container .slide-content-pengawas .card-wrapper .card .image-content .card-image {
+  position: relative;
+  height: calc(10vw + 5rem);
+  width: calc(10vw + 5rem);
+  border-radius: 50%;
+  background: white;
+  padding: 3px;
+}
+
+#struktur .container-fluid .content .pengawas .slide-container .slide-content-pengawas .card-wrapper .card .image-content .card-image .card-img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #008de6;
+}
+
+#struktur .container-fluid .content .pengawas .slide-container .slide-content-pengawas .card-wrapper .card .card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 14px;
+}
+
+#struktur .container-fluid .content .pengawas .slide-container .slide-content-pengawas .card-wrapper .card .card-content .name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+#struktur .container-fluid .content .pengawas .slide-container .slide-content-pengawas .card-wrapper .card .card-content .description {
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+}
+
+#struktur .container-fluid .content .pengawas .slide-container .slide-content-pengawas .card-wrapper .card .card-content .button {
+  border: none;
+  font-size: 16px;
+  color: white;
+  padding: 8px 16px;
+  background-color: #008de6;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#struktur .container-fluid .content .pengawas .slide-container .slide-content-pengawas .card-wrapper .card .card-content button:hover {
+  background-color: #707070;
+}
+
+#struktur .container-fluid .content .pengawas .slide-container .swiper-navBtn {
+  color: gray;
+  opacity: .5;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+#struktur .container-fluid .content .pengawas .slide-container .swiper-navBtn:hover {
+  color: black;
+}
+
+#struktur .container-fluid .content .pengawas .slide-container .swiper-navBtn::before,
+#struktur .container-fluid .content .pengawas .slide-container .swiper-navBtn::after {
+  font-size: 35px;
+}
+
+#struktur .container-fluid .content .pengawas .slide-container .swiper-button-next {
+  right: 0;
+}
+
+#struktur .container-fluid .content .pengawas .slide-container .swiper-button-prev {
+  left: 0;
+}
+
+#struktur .container-fluid .content .pengawas .slide-container .swiper-pagination-bullet {
+  background-color: #6E93f7;
+  opacity: .5;
+}
+
+#struktur .container-fluid .content .pengawas .slide-container .swiper-pagination-bullet-active {
+  background-color: #4070F4;
+}
+
+#struktur .container-fluid .content .penasehat {
+  margin: 50px 0 0 0;
+}
+
+#struktur .container-fluid .content .penasehat .title h2 {
+  color: #006aad;
+  font-size: calc(1vw + 1rem);
+}
+
+#struktur .container-fluid .content .penasehat .slide-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1120px;
+  width: 100%;
+  padding: 0 0 40px 0;
+}
+
+#struktur .container-fluid .content .penasehat .slide-container .slide-content-penasehat {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+#struktur .container-fluid .content .penasehat .slide-container .slide-content-penasehat .card-wrapper .card {
+  width: 100%;
+  border-radius: 25px;
+  background-color: white;
+}
+
+#struktur .container-fluid .content .penasehat .slide-container .slide-content-penasehat .card-wrapper .card .image-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 14px;
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+
+#struktur .container-fluid .content .penasehat .slide-container .slide-content-penasehat .card-wrapper .card .image-content .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #008de6;
+  border-radius: 25px 25px 0 25px;
+}
+
+#struktur .container-fluid .content .penasehat .slide-container .slide-content-penasehat .card-wrapper .card .image-content .overlay::before,
+#struktur .container-fluid .content .penasehat .slide-container .slide-content-penasehat .card-wrapper .card .image-content .overlay::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #008de6;
+}
+
+#struktur .container-fluid .content .penasehat .slide-container .slide-content-penasehat .card-wrapper .card .image-content .overlay::after {
+  border-radius: 0 25px 0 0;
+  background-color: white;
+}
+
+#struktur .container-fluid .content .penasehat .slide-container .slide-content-penasehat .card-wrapper .card .image-content .card-image {
+  position: relative;
+  height: calc(10vw + 5rem);
+  width: calc(10vw + 5rem);
+  border-radius: 50%;
+  background: white;
+  padding: 3px;
+}
+
+#struktur .container-fluid .content .penasehat .slide-container .slide-content-penasehat .card-wrapper .card .image-content .card-image .card-img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #008de6;
+}
+
+#struktur .container-fluid .content .penasehat .slide-container .slide-content-penasehat .card-wrapper .card .card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 14px;
+}
+
+#struktur .container-fluid .content .penasehat .slide-container .slide-content-penasehat .card-wrapper .card .card-content .name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+#struktur .container-fluid .content .penasehat .slide-container .slide-content-penasehat .card-wrapper .card .card-content .description {
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+}
+
+#struktur .container-fluid .content .penasehat .slide-container .slide-content-penasehat .card-wrapper .card .card-content .button {
+  border: none;
+  font-size: 16px;
+  color: white;
+  padding: 8px 16px;
+  background-color: #008de6;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#struktur .container-fluid .content .penasehat .slide-container .slide-content-penasehat .card-wrapper .card .card-content button:hover {
+  background-color: #707070;
+}
+
+#struktur .container-fluid .content .penasehat .slide-container .swiper-navBtn {
+  color: gray;
+  opacity: .5;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+#struktur .container-fluid .content .penasehat .slide-container .swiper-navBtn:hover {
+  color: black;
+}
+
+#struktur .container-fluid .content .penasehat .slide-container .swiper-navBtn::before,
+#struktur .container-fluid .content .penasehat .slide-container .swiper-navBtn::after {
+  font-size: 35px;
+}
+
+#struktur .container-fluid .content .penasehat .slide-container .swiper-button-next {
+  right: 0;
+}
+
+#struktur .container-fluid .content .penasehat .slide-container .swiper-button-prev {
+  left: 0;
+}
+
+#struktur .container-fluid .content .penasehat .slide-container .swiper-pagination-bullet {
+  background-color: #6E93f7;
+  opacity: .5;
+}
+
+#struktur .container-fluid .content .penasehat .slide-container .swiper-pagination-bullet-active {
+  background-color: #4070F4;
 }
 /*# sourceMappingURL=main.css.map */
