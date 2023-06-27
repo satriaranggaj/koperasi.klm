@@ -1526,8 +1526,46 @@ nav ul li.active a .line-navlink {
   color: #006aad;
 }
 
-#struktur .container-fluid .content .pohon-struktur img {
+#struktur .container-fluid .content .pohon-struktur {
+  position: relative;
+  display: inline-block;
   width: 100%;
+}
+
+#struktur .container-fluid .content .pohon-struktur .zoomable {
+  width: 100%;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  cursor: pointer;
+}
+
+#struktur .container-fluid .content .pohon-struktur .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s, visibility 0.3s;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+#struktur .container-fluid .content .zoomed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2000;
+}
+
+#struktur .container-fluid .content .zoomed .overlay {
+  opacity: 1;
+  visibility: visible;
 }
 
 #struktur .container-fluid .content .pengurus {

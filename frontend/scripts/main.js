@@ -106,3 +106,13 @@ var swiper = new Swiper(".slide-content-penasehat", {
       },
   },
 });
+
+const pohonStruktur = document.querySelector('.pohon-struktur');
+const zoomableImg = document.querySelector('.zoomable');
+
+pohonStruktur.addEventListener('click', function () {
+  pohonStruktur.classList.toggle('zoomed');
+});
+
+
+
